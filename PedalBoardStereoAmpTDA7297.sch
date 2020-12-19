@@ -199,19 +199,15 @@ Wire Wire Line
 	3350 4200 3500 4200
 Wire Wire Line
 	3350 5100 3500 5100
-Wire Wire Line
-	1650 4400 1750 4400
-Wire Wire Line
-	1750 4400 1750 4500
 $Comp
 L power:GND #PWR07
 U 1 1 5F7F16CE
-P 1750 4500
-F 0 "#PWR07" H 1750 4250 50  0001 C CNN
-F 1 "GND" H 1755 4327 50  0000 C CNN
-F 2 "" H 1750 4500 50  0001 C CNN
-F 3 "" H 1750 4500 50  0001 C CNN
-	1    1750 4500
+P 1300 4500
+F 0 "#PWR07" H 1300 4250 50  0001 C CNN
+F 1 "GND" H 1305 4327 50  0000 C CNN
+F 2 "" H 1300 4500 50  0001 C CNN
+F 3 "" H 1300 4500 50  0001 C CNN
+	1    1300 4500
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -363,7 +359,7 @@ U 1 1 5F85338D
 P 8000 4550
 F 0 "J5" H 7892 4225 50  0000 C CNN
 F 1 "PWR" H 7892 4316 50  0000 C CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 8000 4550 50  0001 C CNN
+F 2 "TerminalBlock:TerminalBlock_bornier-2_P5.08mm" H 8000 4550 50  0001 C CNN
 F 3 "~" H 8000 4550 50  0001 C CNN
 	1    8000 4550
 	-1   0    0    1   
@@ -445,7 +441,7 @@ Wire Wire Line
 Wire Wire Line
 	2900 5100 3050 5100
 Wire Wire Line
-	1650 4200 2650 4200
+	1550 4200 1800 4200
 Wire Wire Line
 	2650 4200 2650 4250
 $Comp
@@ -487,16 +483,110 @@ Wire Wire Line
 $Comp
 L Connector:Conn_01x03_Male J2
 U 1 1 5F9626D1
-P 1450 4300
-F 0 "J2" H 1558 4581 50  0000 C CNN
-F 1 "Conn_01x03_Male" H 1558 4490 50  0000 C CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical" H 1450 4300 50  0001 C CNN
-F 3 "~" H 1450 4300 50  0001 C CNN
-	1    1450 4300
+P 800 4300
+F 0 "J2" H 908 4581 50  0000 C CNN
+F 1 "1/4\"" H 908 4490 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical" H 800 4300 50  0001 C CNN
+F 3 "~" H 800 4300 50  0001 C CNN
+	1    800  4300
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	1650 4300 2100 4300
+	1550 4300 2100 4300
 Wire Wire Line
 	2100 4300 2100 4950
+$Comp
+L Connector:Conn_01x03_Male J4
+U 1 1 5FC31814
+P 800 5100
+F 0 "J4" H 908 5381 50  0000 C CNN
+F 1 "1/8\"" H 908 5290 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical" H 800 5100 50  0001 C CNN
+F 3 "~" H 800 5100 50  0001 C CNN
+	1    800  5100
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR08
+U 1 1 5FC32EFF
+P 1250 5300
+F 0 "#PWR08" H 1250 5050 50  0001 C CNN
+F 1 "GND" H 1255 5127 50  0000 C CNN
+F 2 "" H 1250 5300 50  0001 C CNN
+F 3 "" H 1250 5300 50  0001 C CNN
+	1    1250 5300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1000 5200 1250 5200
+Wire Wire Line
+	1250 5200 1250 5300
+$Comp
+L Device:R R4
+U 1 1 5FC355B0
+P 1400 4200
+F 0 "R4" V 1300 4200 50  0000 C CNN
+F 1 "1k" V 1400 4200 50  0000 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 1330 4200 50  0001 C CNN
+F 3 "~" H 1400 4200 50  0001 C CNN
+	1    1400 4200
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R5
+U 1 1 5FC3759E
+P 1400 4300
+F 0 "R5" V 1500 4300 50  0000 C CNN
+F 1 "1k" V 1400 4300 50  0000 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 1330 4300 50  0001 C CNN
+F 3 "~" H 1400 4300 50  0001 C CNN
+	1    1400 4300
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	1000 4200 1250 4200
+Wire Wire Line
+	1000 4300 1250 4300
+Wire Wire Line
+	1000 4400 1300 4400
+Wire Wire Line
+	1300 4400 1300 4500
+$Comp
+L Device:R R6
+U 1 1 5FC45EE3
+P 1350 5000
+F 0 "R6" V 1250 5000 50  0000 C CNN
+F 1 "1k" V 1350 5000 50  0000 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 1280 5000 50  0001 C CNN
+F 3 "~" H 1350 5000 50  0001 C CNN
+	1    1350 5000
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R7
+U 1 1 5FC45F11
+P 1350 5100
+F 0 "R7" V 1450 5100 50  0000 C CNN
+F 1 "1k" V 1350 5100 50  0000 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 1280 5100 50  0001 C CNN
+F 3 "~" H 1350 5100 50  0001 C CNN
+	1    1350 5100
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	1000 5000 1200 5000
+Wire Wire Line
+	1000 5100 1200 5100
+Wire Wire Line
+	1500 5100 2100 5100
+Wire Wire Line
+	2100 5100 2100 4950
+Connection ~ 2100 4950
+Wire Wire Line
+	1500 5000 1800 5000
+Wire Wire Line
+	1800 5000 1800 4200
+Connection ~ 1800 4200
+Wire Wire Line
+	1800 4200 2650 4200
 $EndSCHEMATC
