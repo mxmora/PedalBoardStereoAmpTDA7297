@@ -441,8 +441,6 @@ Wire Wire Line
 Wire Wire Line
 	2900 5100 3050 5100
 Wire Wire Line
-	1550 4200 1800 4200
-Wire Wire Line
 	2650 4200 2650 4250
 $Comp
 L power:GND #PWR012
@@ -478,8 +476,6 @@ Wire Wire Line
 	2650 4750 2500 4750
 Wire Wire Line
 	2500 4750 2500 4950
-Wire Wire Line
-	2500 4950 2100 4950
 $Comp
 L Connector:Conn_01x03_Male J2
 U 1 1 5F9626D1
@@ -489,12 +485,8 @@ F 1 "1/4\"" H 908 4490 50  0000 C CNN
 F 2 "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical" H 800 4300 50  0001 C CNN
 F 3 "~" H 800 4300 50  0001 C CNN
 	1    800  4300
-	1    0    0    -1  
+	1    0    0    1   
 $EndComp
-Wire Wire Line
-	1550 4300 2100 4300
-Wire Wire Line
-	2100 4300 2100 4950
 $Comp
 L Connector:Conn_01x03_Male J4
 U 1 1 5FC31814
@@ -504,7 +496,7 @@ F 1 "1/8\"" H 908 5290 50  0000 C CNN
 F 2 "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical" H 800 5100 50  0001 C CNN
 F 3 "~" H 800 5100 50  0001 C CNN
 	1    800  5100
-	1    0    0    -1  
+	1    0    0    1   
 $EndComp
 $Comp
 L power:GND #PWR08
@@ -577,16 +569,28 @@ Wire Wire Line
 	1000 5000 1200 5000
 Wire Wire Line
 	1000 5100 1200 5100
+Text GLabel 1650 4200 2    50   Input ~ 0
+LEFT
+Text GLabel 1600 5000 2    50   Input ~ 0
+LEFT
+Text GLabel 2450 4200 0    50   Input ~ 0
+LEFT
+Text GLabel 1650 4300 2    50   Input ~ 0
+RIGHT
+Text GLabel 1600 5100 2    50   Input ~ 0
+RIGHT
+Text GLabel 2400 4950 0    50   Input ~ 0
+RIGHT
 Wire Wire Line
-	1500 5100 2100 5100
+	2500 4950 2400 4950
 Wire Wire Line
-	2100 5100 2100 4950
-Connection ~ 2100 4950
+	2650 4200 2450 4200
 Wire Wire Line
-	1500 5000 1800 5000
+	1650 4200 1550 4200
 Wire Wire Line
-	1800 5000 1800 4200
-Connection ~ 1800 4200
+	1650 4300 1550 4300
 Wire Wire Line
-	1800 4200 2650 4200
+	1600 5000 1500 5000
+Wire Wire Line
+	1600 5100 1500 5100
 $EndSCHEMATC
